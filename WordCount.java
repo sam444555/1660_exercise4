@@ -66,7 +66,7 @@ public class WordCount
 	public static void main(String[] args) throws Exception
 	{
 		Job job = new Job();
-		job.setJarByClass(wc2.class);
+		job.setJarByClass(WordCount.class);
 		job.setJobName("Max Temperature");
 		FileInputFormat.addInputPath(job, new Path(args[0]));
 		FileOutputFormat.setOutputPath(job, new Path(args[1]));
